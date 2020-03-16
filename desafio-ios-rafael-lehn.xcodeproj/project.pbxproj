@@ -12,6 +12,9 @@
 		4032B595241AAA5D00F50B3C /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4032B594241AAA5D00F50B3C /* Currency.swift */; };
 		4032B598241AB7BC00F50B3C /* characterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4032B597241AB7BC00F50B3C /* characterCell.xib */; };
 		4032B59A241AB7CA00F50B3C /* characterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4032B599241AB7CA00F50B3C /* characterCell.swift */; };
+		403B18512420182800AA7FE3 /* ScaleSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403B18502420182800AA7FE3 /* ScaleSegue.swift */; };
+		403B1859242028A500AA7FE3 /* desafio_ios_rafael_lehn_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403B1858242028A500AA7FE3 /* desafio_ios_rafael_lehn_Tests.swift */; };
+		403B1861242028F800AA7FE3 /* CharactersTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403B1860242028F800AA7FE3 /* CharactersTest.swift */; };
 		4067BBCF241C038E00B1DD33 /* CharacterDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4067BBCE241C038E00B1DD33 /* CharacterDetail.swift */; };
 		408D232D24196FCC00B5E431 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408D232C24196FCC00B5E431 /* AppDelegate.swift */; };
 		408D232F24196FCC00B5E431 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408D232E24196FCC00B5E431 /* SceneDelegate.swift */; };
@@ -22,12 +25,27 @@
 		D476E1B5E01DBFEA86401083 /* Pods_desafio_ios_rafael_lehn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5A8EF947BBECA19D51C59D6 /* Pods_desafio_ios_rafael_lehn.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		403B185B242028A500AA7FE3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 408D232124196FCB00B5E431 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 408D232824196FCB00B5E431;
+			remoteInfo = "desafio-ios-rafael-lehn";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		40046624241C36C7007E82C5 /* rareHQ.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rareHQ.swift; sourceTree = "<group>"; };
 		40046626241C3825007E82C5 /* Hq.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hq.swift; sourceTree = "<group>"; };
 		4032B594241AAA5D00F50B3C /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
 		4032B597241AB7BC00F50B3C /* characterCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = characterCell.xib; sourceTree = "<group>"; };
 		4032B599241AB7CA00F50B3C /* characterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = characterCell.swift; sourceTree = "<group>"; };
+		403B18502420182800AA7FE3 /* ScaleSegue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaleSegue.swift; sourceTree = "<group>"; };
+		403B1856242028A500AA7FE3 /* desafio-ios-rafael-lehn-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "desafio-ios-rafael-lehn-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		403B1858242028A500AA7FE3 /* desafio_ios_rafael_lehn_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = desafio_ios_rafael_lehn_Tests.swift; sourceTree = "<group>"; };
+		403B185A242028A500AA7FE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		403B1860242028F800AA7FE3 /* CharactersTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersTest.swift; sourceTree = "<group>"; };
 		4067BBCE241C038E00B1DD33 /* CharacterDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetail.swift; sourceTree = "<group>"; };
 		408D232924196FCC00B5E431 /* desafio-ios-rafael-lehn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "desafio-ios-rafael-lehn.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		408D232C24196FCC00B5E431 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +61,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		403B1853242028A500AA7FE3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		408D232624196FCB00B5E431 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -72,10 +97,21 @@
 			path = Nib;
 			sourceTree = "<group>";
 		};
+		403B1857242028A500AA7FE3 /* desafio-ios-rafael-lehn-Tests */ = {
+			isa = PBXGroup;
+			children = (
+				403B1858242028A500AA7FE3 /* desafio_ios_rafael_lehn_Tests.swift */,
+				403B185A242028A500AA7FE3 /* Info.plist */,
+				403B1860242028F800AA7FE3 /* CharactersTest.swift */,
+			);
+			path = "desafio-ios-rafael-lehn-Tests";
+			sourceTree = "<group>";
+		};
 		408D232024196FCB00B5E431 = {
 			isa = PBXGroup;
 			children = (
 				408D232B24196FCC00B5E431 /* desafio-ios-rafael-lehn */,
+				403B1857242028A500AA7FE3 /* desafio-ios-rafael-lehn-Tests */,
 				408D232A24196FCC00B5E431 /* Products */,
 				C7C78E33EB378A20CD1DFD4B /* Pods */,
 				C09092A93A2A1F7B5360BC63 /* Frameworks */,
@@ -86,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				408D232924196FCC00B5E431 /* desafio-ios-rafael-lehn.app */,
+				403B1856242028A500AA7FE3 /* desafio-ios-rafael-lehn-Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -97,6 +134,7 @@
 				4032B593241AAA4200F50B3C /* Models */,
 				408D232C24196FCC00B5E431 /* AppDelegate.swift */,
 				4067BBCE241C038E00B1DD33 /* CharacterDetail.swift */,
+				403B18502420182800AA7FE3 /* ScaleSegue.swift */,
 				40046624241C36C7007E82C5 /* rareHQ.swift */,
 				408D232E24196FCC00B5E431 /* SceneDelegate.swift */,
 				408D233024196FCC00B5E431 /* ViewController.swift */,
@@ -128,6 +166,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		403B1855242028A500AA7FE3 /* desafio-ios-rafael-lehn-Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 403B185D242028A500AA7FE3 /* Build configuration list for PBXNativeTarget "desafio-ios-rafael-lehn-Tests" */;
+			buildPhases = (
+				403B1852242028A500AA7FE3 /* Sources */,
+				403B1853242028A500AA7FE3 /* Frameworks */,
+				403B1854242028A500AA7FE3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				403B185C242028A500AA7FE3 /* PBXTargetDependency */,
+			);
+			name = "desafio-ios-rafael-lehn-Tests";
+			productName = "desafio-ios-rafael-lehn-Tests";
+			productReference = 403B1856242028A500AA7FE3 /* desafio-ios-rafael-lehn-Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		408D232824196FCB00B5E431 /* desafio-ios-rafael-lehn */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 408D233D24196FCE00B5E431 /* Build configuration list for PBXNativeTarget "desafio-ios-rafael-lehn" */;
@@ -157,6 +213,10 @@
 				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = none;
 				TargetAttributes = {
+					403B1855242028A500AA7FE3 = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = 408D232824196FCB00B5E431;
+					};
 					408D232824196FCB00B5E431 = {
 						CreatedOnToolsVersion = 11.3;
 					};
@@ -176,11 +236,19 @@
 			projectRoot = "";
 			targets = (
 				408D232824196FCB00B5E431 /* desafio-ios-rafael-lehn */,
+				403B1855242028A500AA7FE3 /* desafio-ios-rafael-lehn-Tests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		403B1854242028A500AA7FE3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		408D232724196FCB00B5E431 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -237,12 +305,22 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		403B1852242028A500AA7FE3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				403B1859242028A500AA7FE3 /* desafio_ios_rafael_lehn_Tests.swift in Sources */,
+				403B1861242028F800AA7FE3 /* CharactersTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		408D232524196FCB00B5E431 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				4067BBCF241C038E00B1DD33 /* CharacterDetail.swift in Sources */,
 				40046625241C36C7007E82C5 /* rareHQ.swift in Sources */,
+				403B18512420182800AA7FE3 /* ScaleSegue.swift in Sources */,
 				4032B59A241AB7CA00F50B3C /* characterCell.swift in Sources */,
 				4032B595241AAA5D00F50B3C /* Currency.swift in Sources */,
 				40046627241C3825007E82C5 /* Hq.swift in Sources */,
@@ -253,6 +331,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		403B185C242028A500AA7FE3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 408D232824196FCB00B5E431 /* desafio-ios-rafael-lehn */;
+			targetProxy = 403B185B242028A500AA7FE3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		408D233224196FCC00B5E431 /* Main.storyboard */ = {
@@ -274,6 +360,46 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		403B185E242028A500AA7FE3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B5JPJ4T4X6;
+				INFOPLIST_FILE = "desafio-ios-rafael-lehn-Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.desafio-ios-rafael-lehn-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/desafio-ios-rafael-lehn.app/desafio-ios-rafael-lehn";
+			};
+			name = Debug;
+		};
+		403B185F242028A500AA7FE3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B5JPJ4T4X6;
+				INFOPLIST_FILE = "desafio-ios-rafael-lehn-Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.desafio-ios-rafael-lehn-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/desafio-ios-rafael-lehn.app/desafio-ios-rafael-lehn";
+			};
+			name = Release;
+		};
 		408D233B24196FCE00B5E431 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -429,6 +555,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		403B185D242028A500AA7FE3 /* Build configuration list for PBXNativeTarget "desafio-ios-rafael-lehn-Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				403B185E242028A500AA7FE3 /* Debug */,
+				403B185F242028A500AA7FE3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		408D232424196FCB00B5E431 /* Build configuration list for PBXProject "desafio-ios-rafael-lehn" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

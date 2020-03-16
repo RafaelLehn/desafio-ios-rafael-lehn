@@ -9,15 +9,27 @@
 import UIKit
 import Alamofire
 import Kingfisher
+import SwiftyJSON
 
 class ViewController: UIViewController {
 
     @IBOutlet weak var titleLable: UILabel!
     @IBOutlet weak var tableview: UITableView!
+    @IBOutlet weak var load: UIActivityIndicatorView!
+    
     var curriences = [Currency]()
     var selectedIndex = 0
     var numberoffset = 0
+    var characterIdNumber = 0
     
+    @IBAction func prepareForUnwind(segue:UIStoryboardSegue){
+        
+    }
+    
+    override func unwind(for unwindSegue: UIStoryboardSegue, towards subsequentVC: UIViewController) {
+        let segue = UnwindScaleSegue(identifier: unwindSegue.identifier, source: unwindSegue.source, destination: unwindSegue.destination)
+        segue.perform()
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,7 +57,6 @@ class ViewController: UIViewController {
             if let locationJSON = response.value as? [String:Any] {
                 let dados = locationJSON["data"] as! [String:Any]
                 let results = dados["results"] as! [[String:Any]]
-//                print(results[0])
                 
                 for personagens in results{
                     let thumbnail = personagens["thumbnail"] as! [String:Any]
@@ -57,11 +68,16 @@ class ViewController: UIViewController {
                         description: personagens["description"] as! String,
                         characterId: personagens["id"] as! Int
                     )
+                    self.characterIdNumber = currency.characterId
+                    print(self.characterIdNumber)
                     self.curriences.append(currency)
                     print(self.curriences.count)
                 }
                 self.tableview.reloadData()
                 print(self.numberoffset)
+                if self.load.isHidden == false{
+                    self.load.isHidden = true
+                }
             }
         })
     }
@@ -71,6 +87,7 @@ class ViewController: UIViewController {
             let viewController = segue.destination as? CharacterDetail
             viewController?.curriences = curriences[self.selectedIndex]
             print(viewController?.curriences)
+            
             
             
         }

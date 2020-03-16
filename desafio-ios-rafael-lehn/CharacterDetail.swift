@@ -16,6 +16,16 @@ class CharacterDetail: UIViewController{
     @IBOutlet weak var characterName: UILabel!
     @IBOutlet weak var characterDescription: UILabel!
     @IBOutlet weak var ButtonHQ: UIButton!
+    @IBOutlet weak var loading: UIActivityIndicatorView!
+    
+    @IBAction func prepareForUnwind(segue:UIStoryboardSegue){
+        
+    }
+    
+    override func unwind(for unwindSegue: UIStoryboardSegue, towards subsequentVC: UIViewController) {
+        let segue = UnwindScaleSegue(identifier: unwindSegue.identifier, source: unwindSegue.source, destination: unwindSegue.destination)
+        segue.perform()
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,10 +45,23 @@ class CharacterDetail: UIViewController{
         }
         
         ButtonHQ.layer.cornerRadius = 10
+        
+        if loading.isHidden == false{
+
+            loading.isHidden = true
+            
+        }
     }
     
     @IBAction func buttonHQ(_ sender: Any) {
         performSegue(withIdentifier: "goRareHQ", sender: nil)
+        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        let viewController = segue.destination as? rareHQ
+        viewController?.id = curriences.characterId
     }
     
 }
